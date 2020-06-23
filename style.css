@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 600px;
+    padding: 20px;
+}
+
+p:hover,li:hover{
+    cursor: pointer;
+    color: green;
+}
+
+p{
+    padding-right: 20px;
+}
+

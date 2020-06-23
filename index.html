@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Map</title>
+
+    <!--Jquery-->
+    <script src="jquery-3.5.1.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="">
+    <div class="">
+
+        <h1 class="title text-center">Brazil Interactive Map</h1>
+
+        <ul class="text-center">
+            <li class="d-inline pr-5" onmousemove="select_region('0')">North</li>
+            <li class="d-inline pr-5" onmousemove="select_region(1)">Northeast</li>
+            <li class="d-inline pr-5" onmousemove="select_region(2)">Midwest</li>
+            <li class="d-inline pr-5" onmousemove="select_region(3)">Southeast</li>
+            <li class="d-inline pr-5" onmousemove="select_region(4)">South</li>
+        </ul>
+
+        <div class="display-inline float-left">
+            <img src="images/mapa.png" id="map">
+        </div>
+    
+        <h1 class="text-center">States</h1>
+
+        <div class="display-inline float-left ">
+            
+            <p onclick="redirect(0)">Acre (AC)</p>
+            <p onclick="redirect(1)">Alagoas (AL)</p>
+            <p onclick="redirect(2)">Amapá (AP)</p>
+            <p onclick="redirect(3)">Amazonas (AM)</p>
+            <p onclick="redirect(4)">Bahia (BA)</p>
+            <p onclick="redirect(5)">Ceará (CE)</p>
+            <p onclick="redirect(6)">Distrito Federal (DF)</p>
+            <p onclick="redirect(7)">Espírito Santo (ES)</p>
+            <p onclick="redirect(8)">Goiás (GO)</p>
+        </div>
+        <div class="display-inline float-left ">
+            <p onclick="redirect(9)">Maranhão (MA)</p>
+            <p onclick="redirect(10)">Mato Grosso (MT)</p>
+            <p onclick="redirect(11)">Mato Grosso do Sul (MS)</p>
+            <p onclick="redirect(12)">Minas Gerais (MG)</p>
+            <p onclick="redirect(13)">Pará (PA)</p>
+            <p onclick="redirect(14)">Paraíba (PB)</p>
+            <p onclick="redirect(15)">Paraná (PR)</p>
+            <p onclick="redirect(16)">Pernambuco (PE)</p>
+            <p onclick="redirect(17)">Piauí (PI)</p>
+        </div>   
+        <div class="display-inline float-left ">
+       
+            <p onclick="redirect(18)">Rio de Janeiro (RJ)</p>
+            <p onclick="redirect(19)">Rio Grande do Norte (RN)</p>
+            <p onclick="redirect(20)">Rio Grande do Sul (RS)</p>
+            <p onclick="redirect(21)">Rondônia (RO)</p>
+            <p onclick="redirect(22)">Roraima (RR)</p>
+            <p onclick="redirect(23)">Santa Catarina (SC)</p>
+            <p onclick="redirect(24)">São Paulo (SP)</p>
+            <p onclick="redirect(25)">Sergipe (SE)</p>
+            <p onclick="redirect(26)">Tocantins (TO)</p>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
